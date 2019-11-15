@@ -10,7 +10,7 @@ class CocktailsController < ApplicationController
 
   def destroy
     @cocktail.destroy
-    redirect_to cocktails_path
+    redirect_to root_path
   end
 
   def new
@@ -23,10 +23,10 @@ class CocktailsController < ApplicationController
       redirect_to cocktail_path(@cocktail)
     else
       render 'new'
-   end
+    end
   end
 
   def cocktail_params
-    params.require(:cocktail).permit(:name)
+    params.require(:cocktail).permit(:name, :photo)
   end
 end

@@ -50,6 +50,12 @@ gem 'faker'
 #security pictures
 gem 'dotenv-rails', groups: [:development, :test]
 
+#Cloudinary
+gem 'cloudinary', '~> 1.9.1'
+
+#carrierwave
+gem 'carrierwave', '~> 1.2'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
